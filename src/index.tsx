@@ -1,19 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Slider from './components/slider';
+import styles from './main.module.css'
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div className={styles.container}>
+    <Slider>
+      <h2>First</h2>
+      <h2>Second</h2>
+      <h2>Third</h2>
+      <h2>Fourth</h2>
+      <h2>Fifth</h2>
+      <h2>Sixth</h2>
+      <h2>Seventh</h2>
+      <h2>Eighth</h2>
+    </Slider>
+  </div>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
