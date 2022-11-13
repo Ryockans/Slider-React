@@ -1,3 +1,1 @@
-export const composeClasses = (...args: String[]) => {
-  return args.join(' + ');
-}
+export const composeClasses = (...args: String[]) => args.join(' + ');
